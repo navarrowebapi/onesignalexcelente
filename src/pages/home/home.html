@@ -1,14 +1,28 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Excelente Mobile
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h3>Sistema de Notificação Excelente</h3>
+  <br>
+  <h4>Insira seu CPF</h4>
+
+  <ion-content padding>
+    <ion-item>
+      <ion-input type="number" placeholder="cpf1" [(ngModel)]="cpf1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="number" placeholder="cpf2" [(ngModel)]="cpf2"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="number" placeholder="cpf3" [(ngModel)]="cpf3"></ion-input>
+    </ion-item>
+    <br><br><br><br>
+    <button ion-button color="primary" full (click)="getCPFs()">Enviar</button>
+  </ion-content>
+  
 </ion-content>
